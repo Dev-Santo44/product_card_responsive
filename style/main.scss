@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+// font-family: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+// font-family: 'Fraunces', serif;
+
+$dark-cyan : hsl(158, 36%, 37%);
+$extra-cyan : #1A4031;
+$cream: hsl(30, 38%, 92%);
+$dark-blue: hsl(212, 21%, 14%);
+$grayish-blue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: $cream;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main_container{
+    width: 50.625rem;
+    height: 37.9375rem;
+    display: flex;
+    flex-direction: row;
+    background: $white;
+    border-radius: 15px;
+    
+    
+    .left_side{
+        overflow: hidden;
+        width: 50%;
+        img{
+            width: 405px;
+            height: 607px;
+            border-radius: 15px 0 0 15px;
+        }
+    }
+
+    .right_side{
+        width: 50%;
+        margin: 0 30px;
+        .text{            
+            margin: 48px 0px 15px 0;
+            letter-spacing: 7px;
+            font-weight: 500;
+        }
+        .big_text{
+            font-family: 'Fraunces', serif;
+            color: $dark-blue;
+            margin: 20px 0px 15px 0;
+            font-size: 44px;
+            line-height: 44px;        
+        }
+        .grey_area{
+            font-family: 'Montserrat', sans-serif;
+            color: $grayish-blue;
+        }
+        .text_para{
+            font-size: 21px;
+            font-weight: 500;
+            margin: 34px 0;
+            text-align: left;
+            line-height: 30px;
+            width: 347px;
+        }
+        .prize{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 40px 0px 25px 0px;
+        }
+        .prize h1:nth-child(1){
+            font-family: 'Fraunces', serif;
+            color: $dark-cyan;
+            font-size: 46px;
+        }
+        .prize h1:nth-child(2){
+            font-size: 16px;
+            font-weight: 500;
+            padding: 0px 55px;
+            width: 150px;
+            text-decoration: line-through;
+        }
+        .btn{
+            width: 350px;
+            height: 64px;
+            border-radius: 10px;
+            background-color: $dark-cyan;
+            cursor: pointer;
+            color:$white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            &:hover,&:focus, &:active{
+                background-color: $extra-cyan;
+                outline: none;
+                border: none;
+            }
+            
+            
+            img{
+                width: 30px;
+                width: 23px;
+            }
+            p{
+                font-family: 'Montserrat', sans-serif;
+                margin: 0 12px; 
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(30deg, 38%, 92%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main_container {
+  width: 50.625rem;
+  height: 37.9375rem;
+  display: flex;
+  flex-direction: row;
+  background: hsl(0deg, 0%, 100%);
+  border-radius: 15px;
+}
+.main_container .left_side {
+  overflow: hidden;
+  width: 50%;
+}
+.main_container .left_side img {
+  width: 405px;
+  height: 607px;
+  border-radius: 15px 0 0 15px;
+}
+.main_container .right_side {
+  width: 50%;
+  margin: 0 30px;
+}
+.main_container .right_side .text {
+  margin: 48px 0px 15px 0;
+  letter-spacing: 7px;
+  font-weight: 500;
+}
+.main_container .right_side .big_text {
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 21%, 14%);
+  margin: 20px 0px 15px 0;
+  font-size: 44px;
+  line-height: 44px;
+}
+.main_container .right_side .grey_area {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228deg, 12%, 48%);
+}
+.main_container .right_side .text_para {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 34px 0;
+  text-align: left;
+  line-height: 30px;
+  width: 347px;
+}
+.main_container .right_side .prize {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 40px 0px 25px 0px;
+}
+.main_container .right_side .prize h1:nth-child(1) {
+  font-family: "Fraunces", serif;
+  color: hsl(158deg, 36%, 37%);
+  font-size: 46px;
+}
+.main_container .right_side .prize h1:nth-child(2) {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0px 55px;
+  width: 150px;
+  text-decoration: line-through;
+}
+.main_container .right_side .btn {
+  width: 350px;
+  height: 64px;
+  border-radius: 10px;
+  background-color: hsl(158deg, 36%, 37%);
+  cursor: pointer;
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.main_container .right_side .btn:hover, .main_container .right_side .btn:focus, .main_container .right_side .btn:active {
+  background-color: #1A4031;
+  outline: none;
+  border: none;
+}
+.main_container .right_side .btn img {
+  width: 30px;
+  width: 23px;
+}
+.main_container .right_side .btn p {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 12px;
+  font-weight: 700;
+  font-size: 20px;
+}/*# sourceMappingURL=main.css.map */
