@@ -24,15 +24,16 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-
-.main_container{
-    width: 50.625rem;
-    height: 37.9375rem;
-    display: flex;
-    flex-direction: row;
-    background: $white;
-    border-radius: 15px;
+@media screen and (max-width: 1440px) {
     
+    .main_container{
+        width: 50.625rem;
+        height: 37.9375rem;
+        display: flex;
+        flex-direction: row;
+        background: $white;
+        border-radius: 15px;
+        
     
     .left_side{
         overflow: hidden;
@@ -102,8 +103,8 @@ body{
             justify-content: center;
             border: none;
             &:hover,&:focus, &:active{
-            background-color: $extra-cyan;
-            outline: none;
+                background-color: $extra-cyan;
+                outline: none;
             border: none;
             }
             
@@ -120,6 +121,75 @@ body{
             }
         }
     }
+}
+
+}
+@media screen and (max-width: 375px){
+    .main_container{
+        width: 21.5625rem;
+        height: 38.4375rem;
+        flex-direction: column;
+        background: $white;
+
+        .left_side{
+            height: 15rem;
+            width: 21.5625rem;
+            background-image: url("../images/image-product-mobile.jpg");
+            background-size: 345px;
+            border-radius: 15px 14px 0px 1px;
+            img{
+                display: none;
+            }
+        }
+
+        .right_side{
+            height: 23.4375em;
+            width: 21.5625rem;
+            margin: 0;
+            padding: 20px;
+            
+            .text{
+                margin: 0;
+                font-size: 14px;
+                margin: 6px 0 0 0;
+            }
+            .big_text{
+                margin: 12px 0px 0px 0;
+                font-size: 30px;
+                line-height: 33px;
+            }
+
+            .text_para{
+                font-size: 14px;
+                margin: 15px 0 30px 0;
+                line-height: 21px;
+                width: 311px;
+            }
+            .prize{
+                margin: 0px 0px 15px 0px;
+            }
+            .prize h1:nth-child(1){
+                font-size: 35px;
+            }
+            .prize h1:nth-child(2){
+                font-size: 13px;               
+                padding: 0px 27px;
+                
+            }
+            .btn{
+                width: 304px;
+                img{
+                    width: 17;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    
+    }
+
+
 }
 
 
